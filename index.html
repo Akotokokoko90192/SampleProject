@@ -3,36 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Project</title>
+    <meta name="description" content="Sample Project - Innovative Solutions for Modern Challenges">
+    <meta name="keywords" content="sample project, innovation, solutions, business">
+    <title>Sample Project | Modern Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Sample Project</h1>
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cube"></i> Sample Project
+            </a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section.</p>
+
+    <main role="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">Welcome to</span>
+                <h1>Transform Your Ideas Into Reality</h1>
+                <p class="hero-subtitle">We provide cutting-edge solutions for modern business challenges</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" role="button">Get Started</a>
+                    <a href="#features" class="btn btn-secondary" role="button">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section.</p>
+
+        <section id="features" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <span class="section-badge">Features</span>
+                <h2 id="features-title" class="section-title">Why Choose Us</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Fast Performance</h3>
+                        <p>Lightning-fast solutions optimized for speed and efficiency</p>
+                        <a href="#" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Enterprise Security</h3>
+                        <p>Advanced security measures to protect your business</p>
+                        <a href="#" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Perfect experience across all devices and platforms</p>
+                        <a href="#" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
+
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <span class="section-badge">Our Team</span>
+                <h2 id="about-title" class="section-title">Meet Our Experts</h2>
+                <div class="team-grid">
+                    <article class="team-member">
+                        <div class="member-image">
+                            <img src="/api/placeholder/300/300" alt="John Doe - CEO & Founder">
+                            <div class="member-social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>John Doe</h3>
+                        <p class="member-role">CEO & Founder</p>
+                        <p class="member-bio">Visionary leader with 15+ years of industry experience</p>
+                    </article>
+                    <article class="team-member">
+                        <div class="member-image">
+                            <img src="/api/placeholder/300/300" alt="Jane Smith - Lead Developer">
+                            <div class="member-social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>Jane Smith</h3>
+                        <p class="member-role">Lead Developer</p>
+                        <p class="member-bio">Tech expert specialized in scalable solutions</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <span class="section-badge">Contact</span>
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>123 Business Street, Tech City, 10001</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>contact@sampleproject.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <form class="contact-form" action="/submit" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Sample Project. All rights reserved.</p>
+
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-cube"></i> Sample Project
+                    </a>
+                    <p>Innovative solutions for modern challenges. Building the future, one project at a time.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Cloud Solutions</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sample Project. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
